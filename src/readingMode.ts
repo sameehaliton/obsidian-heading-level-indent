@@ -175,7 +175,7 @@ export class ShitIndenting {
 			if (currentDivIsHeading) {
 				const hTag: string = headingNodeList[0].tagName.toLowerCase();
 				hNumber = parseInt(hTag.replace(/^\D+/g, "")); // h5 -> 5, h1 -> 1, etc.
-				div.style.paddingLeft = arrMargins[hNumber - 1] + "px";
+				div.style.paddingLeft = arrMargins[hNumber] + "px";
 				div.classList.add(this.arrClassesHeadings[hNumber]);
 			} else {
 				div.style.paddingLeft = arrMargins[hNumber] + "px";

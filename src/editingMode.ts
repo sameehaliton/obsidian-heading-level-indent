@@ -136,7 +136,7 @@ function getDecorationSet(state: EditorState): DecorationSetWithIntervals {
 		const lastDataLineNumber = headings[index + 1]?.headingLineNumber - 1 || state.doc.lines;
 
 		const pxForDataLine = settings[`h${level}`] || 0;
-		const pxForHeadingLine = settings[`h${level - 1}` || 0];
+		const pxForHeadingLine = settings[`h${level}`] || 0;
 
 		intervals.push([headingPos, pxForDataLine]);
 		const dataStyles =
